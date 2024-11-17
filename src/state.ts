@@ -5,6 +5,7 @@ export const userState = selector({
   key: "user",
   get: () =>
     getUserInfo({
+      autoRequestPermission: true,
       avatarType: "normal",
     }),
 });

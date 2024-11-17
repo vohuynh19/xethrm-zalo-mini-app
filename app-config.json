@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "XET. HRM",
-    "headerColor": "#1843EF",
+    "headerColor": "#b61f1f",
     "textColor": "white",
     "leftButton": "back",
     "statusBar": "normal",

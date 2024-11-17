@@ -6,6 +6,7 @@ import HomePage from "pages/index";
 import About from "pages/about";
 import Form from "pages/form";
 import User from "pages/user";
+import CameraPage from "pages/camera";
 
 const MyApp = () => {
   return (
@@ -14,10 +15,11 @@ const MyApp = () => {
         <SnackbarProvider>
           <ZMPRouter>
             <AnimationRoutes>
-              <Route path="/" element={<HomePage></HomePage>}></Route>
-              <Route path="/about" element={<About></About>}></Route>
-              <Route path="/form" element={<Form></Form>}></Route>
-              <Route path="/user" element={<User></User>}></Route>
+              <Route path="/" element={<HomePage />}></Route>
+              <Route path="/about" element={<About />}></Route>
+              <Route path="/form" element={<Form />}></Route>
+              <Route path="/user" element={<User />}></Route>
+              <Route path="/camera" element={<CameraPage />}></Route>
             </AnimationRoutes>
           </ZMPRouter>
         </SnackbarProvider>
