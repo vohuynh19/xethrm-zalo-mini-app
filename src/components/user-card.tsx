@@ -1,13 +1,14 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { userState } from "state";
-import { Avatar, Box, Text } from "zmp-ui";
+import { Avatar, Box, Text, useNavigate } from "zmp-ui";
 
 const UserCard: React.FunctionComponent = () => {
   const { userInfo } = useRecoilValue(userState);
+  const navigate = useNavigate();
 
   return (
-    <Box flex>
+    <Box flex onClick={() => navigate("/user")}>
       <Avatar
         story="default"
         online
@@ -17,7 +18,7 @@ const UserCard: React.FunctionComponent = () => {
       </Avatar>
       <Box ml={4}>
         <Text.Title>{userInfo.name}</Text.Title>
-        <Text>{userInfo.id}</Text>
+        <Text>Nhân viên phục vụ</Text>
       </Box>
     </Box>
   );

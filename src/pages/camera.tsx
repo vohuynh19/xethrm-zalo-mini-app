@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, Button, Page, useNavigate, useSnackbar } from "zmp-ui";
+import { Box, Button, Header, Page, useNavigate, useSnackbar } from "zmp-ui";
 import api, {
   FacingMode,
   PhotoFormat,
@@ -42,7 +42,7 @@ const CameraPage = () => {
   }, []);
 
   return (
-    <Page>
+    <Page name="Chấm công">
       <Box>
         <video
           style={{ width: "100vw", height: "auto" }}
